@@ -3,6 +3,12 @@ For retrofit error handling
 
 the try catch(to retrofit service) will called from the RetrofitSafeCallUtil and you will get a data class Which contains the result, error(in case there is one), and status of the retrofit request
 
+![GitHub release (latest by date)](https://img.shields.io/github/v/release/davidHarush/RetrofitSafeCallUtil)
+![GitHub top language](https://img.shields.io/github/languages/top/davidHarush/RetrofitSafeCallUtil)
+![GitHub repo size](https://img.shields.io/github/repo-size/davidHarush/RetrofitSafeCallUtil)
+![GitHub issues](https://img.shields.io/github/issues/davidHarush/RetrofitSafeCallUtil)
+
+
 You need to call  <br/>
 ```SafeCall.fetch { <retrofit2.Response<T>> }``` <br/>
 For example <br/>
