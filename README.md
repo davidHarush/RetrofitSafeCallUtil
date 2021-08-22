@@ -1,20 +1,25 @@
 # RetrofitSafeCallUtil
 For retrofit error handling
 
-the try catch will called feom the util and you will get a data class Which contains the result, error(in case there is one), and status of the retrofit request
+the try catch(to retrofit service) will called from the RetrofitSafeCallUtil and you will get a data class Which contains the result, error(in case there is one), and status of the retrofit request
 
-You need to call 
+You need to call  <br/>
+```SafeCall.fetch { <retrofit2.Response<T>> }``` <br/>
+For example <br/>
+``` 
+val request = SafeCall.fetch { api.getPopularMovies() }
+if (request.failed || !request.isSuccessful) {
+	//  do failed action
+} else{
+	//  do isSuccessful action
+}
+        
+```
 
-```SafeCall.fetch { <retrofit2.Response<T>> }```
-
-For example
-
-```SafeCall.fetch { api.getPopularMovies() }```
-
-This return SimpleResponse<T>
+This return SafeResponse<T>
 
 ```
-data class SimpleResponse<T>(
+data class SafeResponse<T>(
     val status: Status,
     val data: Response<T>?,
     val exception: Exception?
