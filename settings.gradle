@@ -1,0 +1,3 @@
+rootProject.name = "SafeApiCall"
+include ':app'
+include ':SafeCall'
