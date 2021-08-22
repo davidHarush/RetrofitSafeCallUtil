@@ -13,8 +13,8 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         lifecycleScope.launch {
-            val response = MainRepository.getCharacterById(2) ?: ""
-            Log.i("MainActivity", "Repository response: ${response.toString()}")
+            val response = MainRepository.getCharacterById(2)
+            Log.i("MainActivity", "Repository response: ${response}")
         }
     }
 }

@@ -9,11 +9,11 @@ import com.david.haru.safeapicall.networok.NetworkLayer
 object MainRepository {
 
 
-    suspend fun getCharacterById(characterId: Int): Any? {
+    suspend fun getCharacterById(characterId: Int): String {
         val request = NetworkLayer.apiClient.getCharacterById(2)
         if (request.failed || !request.isSuccessful) {
-            return null
+            return ""
         }
-        return request.body
+        return request.body.toString()
     }
 }
