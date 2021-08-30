@@ -7,6 +7,7 @@ the try catch(to retrofit service) will called from the RetrofitSafeCallUtil and
 ![GitHub top language](https://img.shields.io/github/languages/top/davidHarush/RetrofitSafeCallUtil)
 ![GitHub repo size](https://img.shields.io/github/repo-size/davidHarush/RetrofitSafeCallUtil)
 ![GitHub issues](https://img.shields.io/github/issues/davidHarush/RetrofitSafeCallUtil)
+[![CodeFactor](https://www.codefactor.io/repository/github/davidharush/retrofitsafecallutil/badge)](https://www.codefactor.io/repository/github/davidharush/retrofitsafecallutil)
 
 
 You need to call  <br/>
